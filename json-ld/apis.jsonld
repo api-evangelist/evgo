@@ -1,0 +1,58 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EVgo",
+  "description": "EVgo is one of the largest public DC fast charging networks in the United States, operating over 1,100 fast charging locations across 47 states. EVgo provides REST APIs through its EVgo Inside partner integration platform, enabling automakers, fleet operators, and app developers to embed charging station discovery, real-time availability, session initiation, account creation, and payment processing directly into their own branded experiences. Charging station data is also served via the PlugShare API, which EVgo owns and operates.",
+  "url": "https://www.evgo.com/",
+  "sameAs": [
+    "https://www.linkedin.com/company/evgo/",
+    "https://twitter.com/evgonetwork",
+    "https://github.com/evgo"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Business Partnerships",
+    "url": "https://www.evgo.com/company/contact/",
+    "email": "info@evgo.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "EVgo APIs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "EVgo Inside API",
+        "description": "The EVgo Inside partner integration API allows third-party apps — including automaker head units, fleet management platforms, and mobile apps — to embed EVgo's full charging workflow. Capabilities include new account registration, linking existing EVgo accounts, locating nearby DC fast chargers, checking real-time charger availability, initiating and stopping charging sessions, and handling payment. Access is granted through a commercial partnership agreement rather than a public self-serve portal.",
+        "url": "https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/",
+        "category": [
+          "EV Charging",
+          "Charging Sessions",
+          "Station Availability",
+          "Account Management",
+          "Partner Integration"
+        ]
+      },
+      {
+        "@type": "Offer",
+        "name": "PlugShare Station Data API",
+        "description": "The PlugShare Charging Stations API, operated by EVgo (which acquired Recargo/PlugShare in 2021), provides deep and comprehensive public charging location data drawn from charge point operators, industry partners, and crowdsourced EV driver contributions. The API serves millions of requests per month and powers mobile apps, in-vehicle navigation systems, kiosks, and public displays for major automakers, utilities, and EV industry stakeholders. Access is limited to commercial licenses for EV industry partners.",
+        "url": "https://developer.plugshare.com/",
+        "category": [
+          "Charging Station Data",
+          "EV Map",
+          "Location Data",
+          "Points of Interest",
+          "Navigation"
+        ]
+      }
+    ]
+  },
+  "keywords": [
+    "Electric Vehicles",
+    "EV Charging",
+    "Charging Stations",
+    "Energy",
+    "Transportation",
+    "Mobility"
+  ]
+}
