@@ -1,0 +1,112 @@
+name: EVgo Charging Plans
+description: >
+  EVgo offers consumer charging membership plans for EV drivers as well as
+  commercial partnership arrangements for businesses integrating the EVgo
+  Inside API or PlugShare Station Data API. Consumer plans govern per-kWh
+  or per-minute charging rates at the physical network; API access for
+  partners is negotiated under separate commercial agreements.
+
+plans:
+  - name: Pay As You Go
+    description: >
+      No monthly fee. Drivers pay per kWh or per minute (state-dependent)
+      at the standard rate. No commitment required; credit card charged
+      per session.
+    url: https://www.evgo.com/pricing/
+    price: 0.00
+    currency: USD
+    billingCycle: none
+    ratePerKwh: 0.43
+    rateUnit: kWh
+    features:
+      - No monthly fee
+      - Per-session billing via credit card or EVgo app
+      - Access to 1,100+ DC fast charging locations nationwide
+      - 24/7 charging crew support (877-494-3833)
+      - No reservation fees
+
+  - name: EVgo Plus
+    description: >
+      Monthly membership for moderate EV charging users (3–5 sessions per
+      month). Reduces per-kWh rate and eliminates session fees.
+    url: https://www.evgo.com/pricing/
+    price: 6.99
+    currency: USD
+    billingCycle: monthly
+    ratePerKwh: 0.19
+    rateUnit: kWh
+    features:
+      - Reduced per-kWh rates (as low as $0.19/kWh)
+      - No session fees
+      - No reservation fees
+      - EVgo Rewards loyalty points
+      - Access to all EVgo charging locations
+
+  - name: EVgo PlusMax
+    description: >
+      Monthly membership for frequent EV charging users (6+ sessions per
+      month). Provides the lowest per-kWh rate available on the EVgo network.
+    url: https://www.evgo.com/pricing/
+    price: 12.99
+    currency: USD
+    billingCycle: monthly
+    ratePerKwh: 0.15
+    rateUnit: kWh
+    features:
+      - Lowest per-kWh rates (as low as $0.15/kWh)
+      - No session fees
+      - No reservation fees
+      - EVgo Rewards loyalty points
+      - Access to all EVgo charging locations
+
+  - name: EVgo Basic (California, Florida, Texas)
+    description: >
+      Low-cost entry membership available in select states for drivers who
+      charge occasionally and want a slight discount over pay-as-you-go.
+    url: https://www.evgo.com/pricing/
+    price: 1.00
+    currency: USD
+    billingCycle: monthly
+    ratePerKwh: 0.34
+    rateUnit: kWh
+    features:
+      - Available in California, Florida, and Texas
+      - Reduced per-kWh rate vs. pay-as-you-go
+      - Access to all EVgo charging locations
+
+  - name: EVgo Inside Partner API (Commercial)
+    description: >
+      Commercial API access for automakers, fleet operators, and app
+      developers to embed EVgo charging into their own branded experiences.
+      Pricing and rate limits are negotiated individually under a commercial
+      partnership agreement. Covers station discovery, real-time
+      availability, session initiation, account creation, and payment APIs.
+    url: https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
+    price: null
+    currency: USD
+    billingCycle: negotiated
+    features:
+      - Account registration and linking
+      - Station location and search
+      - Real-time charger availability
+      - Session initiation and termination
+      - Payment processing integration
+      - White-label / co-branded experience
+      - Dedicated partner support
+
+  - name: PlugShare Station Data API (Commercial License)
+    description: >
+      Commercial license to access the PlugShare Charging Stations API for
+      EV industry stakeholders. Provides comprehensive public charging
+      location data for in-vehicle navigation, mobile apps, kiosks, and
+      public displays. Personal or non-commercial licenses are not available.
+    url: https://developer.plugshare.com/
+    price: null
+    currency: USD
+    billingCycle: negotiated
+    features:
+      - Millions of requests per month capacity
+      - Comprehensive station data from CPOs and crowdsourced drivers
+      - In-vehicle navigation POI data licensing
+      - Mobile and web application data licensing
+      - Editorial integrity team-maintained data quality

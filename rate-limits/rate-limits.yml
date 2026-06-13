@@ -1,0 +1,57 @@
+name: EVgo API Rate Limits
+description: >
+  EVgo does not publish specific rate limit figures for its EVgo Inside
+  partner API or the PlugShare Station Data API in public documentation.
+  Both APIs are accessed via commercial partnership agreements, and rate
+  limits, quotas, and throttling policies are established per partner
+  during the onboarding process. The PlugShare API is reported to serve
+  millions of requests per month across all licensed partners. Partners
+  should negotiate specific SLAs, throughput limits, and burst allowances
+  directly with EVgo's partnership team.
+
+rateLimits:
+  - name: EVgo Inside Partner API
+    scope: per-partner
+    requestsPerMinute: null
+    requestsPerHour: null
+    requestsPerDay: null
+    requestsPerMonth: null
+    burstLimit: null
+    concurrentConnections: null
+    notes: >
+      Rate limits are negotiated individually as part of the commercial
+      partner onboarding agreement. Contact EVgo business partnerships
+      at https://www.evgo.com/company/contact/ for specific quota details.
+
+  - name: PlugShare Station Data API
+    scope: per-commercial-license
+    requestsPerMinute: null
+    requestsPerHour: null
+    requestsPerDay: null
+    requestsPerMonth: null
+    burstLimit: null
+    concurrentConnections: null
+    notes: >
+      The PlugShare API serves millions of requests per month across all
+      licensed commercial partners. Individual throughput limits are set
+      per commercial license agreement. Access requests are evaluated on a
+      case-by-case basis. Personal or non-commercial use is not permitted.
+      Submit an access request at https://developer.plugshare.com/access.
+
+policies:
+  - name: Commercial Partners Only
+    description: >
+      Both the EVgo Inside API and PlugShare Station Data API are only
+      available to commercial partners in the EV industry. No self-serve
+      public developer tier exists.
+  - name: No Public API Keys
+    description: >
+      API keys and credentials are provisioned during the commercial
+      onboarding process. There is no automated sign-up or instant key
+      issuance.
+  - name: Authentication
+    description: >
+      Authentication details are provided to approved partners during
+      onboarding. Standard REST API patterns (OAuth 2.0 or API key-based
+      authentication) are likely employed based on industry norms, but
+      EVgo does not publish the specific authentication scheme publicly.

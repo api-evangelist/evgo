@@ -1,0 +1,130 @@
+name: EVgo
+description: >
+  EVgo is one of the largest public DC fast charging networks in the United
+  States, operating over 1,100 fast charging locations across 47 states.
+  EVgo provides REST APIs through its EVgo Inside partner integration
+  platform, enabling automakers, fleet operators, and app developers to
+  embed charging station discovery, real-time availability, session
+  initiation, account creation, and payment processing directly into their
+  own branded experiences. Charging station data is also served via the
+  PlugShare API, which EVgo owns and operates.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Electric Vehicles
+  - EV Charging
+  - Charging Stations
+  - Energy
+  - Transportation
+  - Mobility
+url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/apis.yml
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+apis:
+  - name: EVgo Inside API
+    description: >
+      The EVgo Inside partner integration API allows third-party apps —
+      including automaker head units, fleet management platforms, and mobile
+      apps — to embed EVgo's full charging workflow. Capabilities include
+      new account registration, linking existing EVgo accounts, locating
+      nearby DC fast chargers, checking real-time charger availability,
+      initiating and stopping charging sessions, and handling payment.
+      Access is granted through a commercial partnership agreement rather
+      than a public self-serve portal.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
+    baseURL: https://api.evgo.com
+    tags:
+      - EV Charging
+      - Charging Sessions
+      - Station Availability
+      - Account Management
+      - Partner Integration
+    properties:
+      - type: Documentation
+        url: https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
+      - type: TermsOfService
+        url: https://www.evgo.com/terms-of-service/
+      - type: PrivacyPolicy
+        url: https://www.evgo.com/privacy-policy/
+      - type: Contact
+        url: https://www.evgo.com/company/contact/
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/finops/finops.yml
+    contact:
+      - FN: EVgo Business Partnerships
+        url: https://www.evgo.com/company/contact/
+        email: info@evgo.com
+
+  - name: PlugShare Station Data API
+    description: >
+      The PlugShare Charging Stations API, operated by EVgo (which acquired
+      Recargo/PlugShare in 2021), provides deep and comprehensive public
+      charging location data drawn from charge point operators, industry
+      partners, and crowdsourced EV driver contributions. The API serves
+      millions of requests per month and powers mobile apps, in-vehicle
+      navigation systems, kiosks, and public displays for major automakers,
+      utilities, and EV industry stakeholders. Access is limited to
+      commercial licenses for EV industry partners.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.plugshare.com/
+    baseURL: https://api.plugshare.com
+    tags:
+      - Charging Station Data
+      - EV Map
+      - Location Data
+      - Points of Interest
+      - Navigation
+    properties:
+      - type: Documentation
+        url: https://developer.plugshare.com/
+      - type: AccessRequest
+        url: https://developer.plugshare.com/access
+      - type: DataTooling
+        url: https://company.plugshare.com/data.html
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/evgo/refs/heads/main/finops/finops.yml
+    contact:
+      - FN: PlugShare Developer Support
+        url: https://developer.plugshare.com/access
+        email: info@evgo.com
+
+common:
+  - type: Website
+    url: https://www.evgo.com/
+  - type: Blog
+    url: https://www.evgo.com/blog/
+  - type: PressReleases
+    url: https://www.evgo.com/news/
+  - type: Pricing
+    url: https://www.evgo.com/pricing/
+  - type: Support
+    url: https://helpcenter.evgo.com/hc/en-us
+  - type: TermsOfService
+    url: https://www.evgo.com/terms-of-service/
+  - type: PrivacyPolicy
+    url: https://www.evgo.com/privacy-policy/
+  - type: Contact
+    url: https://www.evgo.com/company/contact/
+  - type: StatusPage
+    url: https://www.evgo.com/support/faq/
+  - type: HelpCenter
+    url: https://helpcenter.evgo.com/hc/en-us
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/evgo/
+  - type: Twitter
+    url: https://twitter.com/evgonetwork
+  - type: GitHub
+    url: https://github.com/evgo
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

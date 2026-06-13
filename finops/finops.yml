@@ -1,0 +1,96 @@
+name: EVgo API Financial Operations
+description: >
+  Financial operations guidance for organizations integrating the EVgo
+  Inside partner API or the PlugShare Station Data API. API access costs
+  are determined by commercial partnership agreements. Consumer-facing
+  charging costs (per kWh or per minute) are separate from API access fees
+  and apply to EVgo network usage at physical charging stations.
+
+costDrivers:
+  - name: EVgo Inside API Access
+    type: commercial-negotiated
+    description: >
+      API access fees for the EVgo Inside integration platform are
+      established through a commercial partnership agreement. Costs vary
+      based on integration scope, transaction volume, the number of
+      supported user accounts, and the markets served. Contact EVgo
+      business development for pricing.
+    estimatedCost: null
+    billingModel: negotiated
+    url: https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
+
+  - name: PlugShare Station Data API License
+    type: commercial-negotiated
+    description: >
+      Commercial data licensing fees for the PlugShare Charging Stations
+      API are negotiated per partner. License cost is typically influenced
+      by the volume of API calls, the breadth of geographic coverage, and
+      the type of application (in-vehicle navigation, mobile app, kiosk,
+      or public display).
+    estimatedCost: null
+    billingModel: negotiated
+    url: https://developer.plugshare.com/
+
+  - name: Consumer Charging — Pay As You Go
+    type: per-session
+    description: >
+      End users of apps integrating EVgo Inside pay standard EVgo charging
+      rates. Pay-as-you-go rates range from approximately $0.31–$0.43 per
+      kWh (or per-minute in most non-California states). A session fee of
+      $0.99–$1.99 may apply at some locations.
+    estimatedCost: 0.43
+    billingModel: per-kWh
+    currency: USD
+    url: https://www.evgo.com/pricing/
+
+  - name: Consumer Charging — EVgo Plus Membership
+    type: subscription
+    description: >
+      App users who subscribe to EVgo Plus ($6.99/month) receive discounted
+      per-kWh rates as low as $0.19/kWh, no session fees, and no
+      reservation fees. Relevant when designing the in-app billing UX for
+      EVgo Inside partners.
+    estimatedCost: 6.99
+    billingModel: monthly-subscription
+    currency: USD
+    url: https://www.evgo.com/pricing/
+
+  - name: Consumer Charging — EVgo PlusMax Membership
+    type: subscription
+    description: >
+      App users who subscribe to EVgo PlusMax ($12.99/month) receive the
+      lowest per-kWh rates available on the network, as low as $0.15/kWh,
+      with no session or reservation fees.
+    estimatedCost: 12.99
+    billingModel: monthly-subscription
+    currency: USD
+    url: https://www.evgo.com/pricing/
+
+optimizationTips:
+  - name: Encourage Membership Upsell
+    description: >
+      Partners integrating EVgo Inside should promote EVgo Plus or PlusMax
+      memberships to frequent users to reduce per-session costs and improve
+      user satisfaction.
+  - name: Cache Station Data
+    description: >
+      Partners using the PlugShare Station Data API should cache station
+      location results where appropriate to reduce API call volume and
+      associated licensing costs.
+  - name: Negotiate Volume Tiers
+    description: >
+      When approaching EVgo for commercial API access, negotiate volume
+      pricing tiers upfront. Partners with high anticipated call volumes
+      can often secure better per-call rates.
+  - name: Monitor Session Completion Rates
+    description: >
+      For EVgo Inside integrators, track session initiation vs. completion
+      rates to identify friction points that lead to abandoned charges,
+      which may carry partial fees.
+
+contacts:
+  - name: EVgo Business Partnerships
+    url: https://www.evgo.com/company/contact/
+    email: info@evgo.com
+  - name: PlugShare API Access
+    url: https://developer.plugshare.com/access
