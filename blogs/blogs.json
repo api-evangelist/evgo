@@ -1,5 +1,14 @@
 {
   "url": "https://www.evgo.com/blog/",
   "retrieved": "2026-06-13",
-  "blogs": []
+  "blogs": [],
+  "repo": "evgo",
+  "feeds": [
+    {
+      "source": "https://www.evgo.com/",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
