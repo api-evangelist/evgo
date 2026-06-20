@@ -8,7 +8,7 @@ description: >
   initiation, account creation, and payment processing directly into their
   own branded experiences. Charging station data is also served via the
   PlugShare API, which EVgo owns and operates.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Electric Vehicles
   - EV Charging
@@ -31,7 +31,7 @@ apis:
       initiating and stopping charging sessions, and handling payment.
       Access is granted through a commercial partnership agreement rather
       than a public self-serve portal.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
     baseURL: https://api.evgo.com
     tags:
@@ -70,7 +70,7 @@ apis:
       navigation systems, kiosks, and public displays for major automakers,
       utilities, and EV industry stakeholders. Access is limited to
       commercial licenses for EV industry partners.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.plugshare.com/
     baseURL: https://api.plugshare.com
     tags:
