@@ -2,11 +2,13 @@
   "repo": "evgo",
   "feeds": [
     {
-      "source": "https://www.evgo.com/blog/",
+      "source": "https://www.evgo.com/",
+      "feed_url": "https://www.evgo.com/",
+      "title": "",
       "saved": 0,
-      "error": "429 Vercel Security Checkpoint (bot block)"
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-27T12:40:47Z",
+  "fetched": "2026-07-11T11:50:51Z",
   "post_count": 0
 }
