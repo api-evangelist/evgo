@@ -8,7 +8,19 @@ description: >
   initiation, account creation, and payment processing directly into their
   own branded experiences. Charging station data is also served via the
   PlugShare API, which EVgo owns and operates.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/evgo.png
 tags:
   - Electric Vehicles
   - EV Charging
