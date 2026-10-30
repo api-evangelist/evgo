@@ -64,52 +64,114 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-EVgo is one of the largest public DC fast charging networks in the United States, operating over 1,100 fast charging locations across 47 states. EVgo provides partner APIs through its **EVgo Inside** integration platform and the **PlugShare Station Data API** (EVgo acquired Recargo/PlugShare in 2021).
+EVgo is one of the largest public DC fast charging networks in the United States, operating over 1,100 fast charging locations across 47 states. EVgo provides REST APIs through its EVgo Inside partner integration platform, enabling automakers, fleet operators, and app developers to embed charging station discovery, real-time availability, session initiation, account creation, and payment processing directly into their own branded experiences. Charging station data is also served via the PlugShare API, which EVgo owns and operates.
 
-## APIs
+**Areas:** Electric Vehicles · EV Charging · Charging Stations · Energy · Transportation · Mobility
 
-### EVgo Inside API
+## EVgo on APIs.io
 
-The EVgo Inside partner API enables automakers, fleet operators, and mobile app developers to embed EVgo's complete charging workflow into their own branded experiences:
+Everything profiled for EVgo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/evgo/](https://apis.io/providers/evgo/)** — or go straight to one of the APIs or properties below.
 
-- New EVgo account registration
-- Existing EVgo account linking
-- Nearby DC fast charger location and search
-- Real-time charger availability
-- Charging session initiation and termination
-- Payment processing
+### APIs (2)
 
-Access requires a commercial partnership agreement. Contact EVgo at https://www.evgo.com/charging-solutions/business-and-commercial/evgo-inside/
+- [EVgo Inside API](https://apis.io/apis/evgo/evgo-inside-api/) — The EVgo Inside partner integration API allows third-party apps — including automaker head units, fleet management platforms, and mobile apps — to embed…
+- [PlugShare Station Data API](https://apis.io/apis/evgo/plugshare-station-data-api/) — The PlugShare Charging Stations API, operated by EVgo (which acquired Recargo/PlugShare in 2021), provides deep and comprehensive public charging location…
 
-### PlugShare Station Data API
+### Published properties
 
-The PlugShare API provides comprehensive public EV charging location data drawn from charge point operators, industry partners, and crowdsourced EV driver contributions. It serves millions of requests per month and powers in-vehicle navigation, mobile apps, kiosks, and public displays for major automakers and utilities.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Access is limited to commercial EV industry partners. Request access at https://developer.plugshare.com/
+#### JSON-LD (1)
 
-## Resources
+Linked-data contexts for the provider's vocabulary.
 
-- **Website:** https://www.evgo.com/
-- **Pricing:** https://www.evgo.com/pricing/
-- **Blog:** https://www.evgo.com/blog/
-- **Help Center:** https://helpcenter.evgo.com/hc/en-us
-- **Terms of Service:** https://www.evgo.com/terms-of-service/
-- **Privacy Policy:** https://www.evgo.com/privacy-policy/
-- **Contact:** https://www.evgo.com/company/contact/
-- **PlugShare Developer Center:** https://developer.plugshare.com/
-- **GitHub:** https://github.com/evgo
+- [Apis Context](https://apis.io/jsonld/evgo/apis/)
 
-## Consumer Plans
+#### Security (1)
 
-| Plan | Monthly Fee | Per kWh Rate |
-|------|-------------|--------------|
-| Pay As You Go | $0.00 | ~$0.31–$0.43 |
-| EVgo Basic (CA/FL/TX) | $1.00 | $0.34 |
-| EVgo Plus | $6.99 | as low as $0.19 |
-| EVgo PlusMax | $12.99 | as low as $0.15 |
+Authentication, trust centre, and vulnerability disclosure.
 
-## Support
+- [Evgo Domain Security](https://apis.io/security/evgo/evgo-domain-security/)
 
-- **24/7 Support Line:** 877-494-3833
-- **Email:** support@evgo.com
-- **Help Center:** https://helpcenter.evgo.com/hc/en-us
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/evgo/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/evgo/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/evgo/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.evgo.com/)
+- [Pricing](https://www.evgo.com/pricing/)
+- [Support](https://helpcenter.evgo.com/hc/en-us)
+- [Blog](https://www.evgo.com/blog/)
+- [Terms of service](https://www.evgo.com/terms-of-service/)
+- [Privacy policy](https://www.evgo.com/privacy-policy/)
+- [Status](https://www.evgo.com/support/faq/)
+
+## API Evangelist rating
+
+**Kin Score 17.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.0 |
+| Contract quality | 6.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 15.5 |
+| Access clarity | 23.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.3** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/evgo/](https://apis.io/providers/evgo/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for EVgo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/evgo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
